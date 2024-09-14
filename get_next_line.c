@@ -6,7 +6,7 @@
 /*   By: valvarez <valvarez@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 20:09:35 by valvarez          #+#    #+#             */
-/*   Updated: 2024/09/12 20:14:23 by valvarez         ###   ########.fr       */
+/*   Updated: 2024/09/14 11:55:58 by valvarez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -123,31 +123,3 @@ char	*get_next_line(int fd)
 	}
 	return (line);
 }
-/*
-#include <stdio.h>
-#include <unistd.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-#include <stdlib.h>
-#include "get_next_line.h"
-
-int main (void)
-{
-    int fd; 
-    char *line;
-
-    fd = 0;
-
-    fd = open("quijote.txt", O_RDONLY);
-    if (fd == -1)
-        return (-1);
-    line = get_next_line(fd);
-    while (line) 
-    {
-        printf("%s", line);
-        free(line);
-        line = get_next_line(fd);
-    }
-    //printf(">%d\n", line == NULL ? 1 : 0);
-}*/
